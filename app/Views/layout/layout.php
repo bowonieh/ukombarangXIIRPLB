@@ -43,3 +43,4 @@
        <?php $this->renderSection('content');?>
     </div>
 </div>
+<?php $this->renderSection('footer')?>

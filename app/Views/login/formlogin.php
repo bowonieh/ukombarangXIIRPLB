@@ -24,7 +24,7 @@
 
     </div>
 <?php $this->endSection();?>
-
+<?php $this->section('footer')?>
 <script src="<?=base_url()?>/vendor/components/jquery/jquery.min.js"></script>
 <script type="text/javascript">
     $('#formLogin').on('submit',function(a){
@@ -49,3 +49,4 @@
         
     });
 </script>
+<?php $this->endSection()?>
