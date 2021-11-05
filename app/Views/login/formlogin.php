@@ -1,14 +1,5 @@
-<html>
-
-<head>
-
-    <link rel="stylesheet" href="<?= base_url() ?>/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" />
-</head>
-
-<body>
-    <div class="container">
-        
-    </div>
+<?php $this->extend('layout/layout');?>
+<?php $this->section('content');?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -32,8 +23,8 @@
         </div>
 
     </div>
+<?php $this->endSection();?>
 
-</body>
 <script src="<?=base_url()?>/vendor/components/jquery/jquery.min.js"></script>
 <script type="text/javascript">
     $('#formLogin').on('submit',function(a){
@@ -58,4 +49,3 @@
         
     });
 </script>
-</html>
