@@ -1,6 +1,8 @@
-<html>
-<body>
-    <table >
+<?php $this->extend('layout/layout');?>
+<?php $this->section('content');?>
+    <a href="<?=base_url()?>/barang/tambah"><button class="btn btn-primary">Tambah</button></a>
+    
+    <table class="table table-hovered" >
         <thead>
         <tr>
             <th>
@@ -25,11 +27,10 @@
                     <td><?=$no++?></td>
                     <td><?=$data['nama_barang']?></td>
                     <td><?=$data['total_barang']?></td>
-                    <td></td>
+                    <td><a href="<?=base_url()?>/barang/edit/<?=$data['id_barang'];?>"><button class="btn btn-primary">EDIT</button></a></td>
                 </tr>
 
             <?php endforeach;?>
         </tbody>
     </table>
-</body>
-</html>
+<?php $this->endSection()?>
