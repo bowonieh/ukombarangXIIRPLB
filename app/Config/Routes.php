@@ -38,6 +38,11 @@ $routes->get('/logout','LoginController::logout');
 $routes->post('/check','loginController::check');
 //Dashboard
 $routes->get('/dashboard','DashboardController::index',['filter'=>'loginfilter']);
+//Routes untuk Barang
+$routes->get('/barang','BarangController::index');
+$routes->get('/barang/(:any)','BarangController::$1_get');
+$routes->post('/barang/(:any)','BarangController::$1_post');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
