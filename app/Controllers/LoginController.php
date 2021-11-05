@@ -42,7 +42,8 @@ class LoginController extends BaseController
             // return $this->response->setJSON($sessiondata);
             session()->set($sessiondata);
 
-            return redirect()->to('dashboard');
+           // return redirect()->to('dashboard');
+           return $this->response->setJSON($sessiondata);
         else :
             echo "login gagal";
         endif;

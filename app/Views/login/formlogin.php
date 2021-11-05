@@ -49,7 +49,7 @@
             },
             success: function(d){
                 if(d.SUDAH_LOGIN){
-                    window.location.href = 'dashboard';
+                   // window.location.href = 'dashboard';
                 }else{
                     alert('Gagal Login');
                 }
